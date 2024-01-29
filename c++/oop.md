@@ -1,5 +1,3 @@
-this is new part and all concepts is very important 
-
 OOP stands for Object-Oriented Programming :
 
 Procedural programming is about writing procedures or functions that perform operations on the data, while object-oriented programming is about creating objects that contain both data and functions.
@@ -256,8 +254,6 @@ class MyClass {
   int x;   // Private attribute
   int y;   // Private attribute
 };
-///
-///
 
 Encapsulation
 The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must declare class variables/attributes as private (cannot be accessed from outside the class). If you want others to read or modify the value of a private member, you can provide public get and set methods.
@@ -290,94 +286,21 @@ int main() {
   cout << myObj.getSalary();
   return 0;
 }
-Example explained
+
 The salary attribute is private, which have restricted access.
-
 The public setSalary() method takes a parameter (s) and assigns it to the salary attribute (salary = s).
-
 The public getSalary() method returns the value of the private salary attribute.
-
 Inside main(), we create an object of the Employee class. Now we can use the setSalary() method to set the value of the private attribute to 50000. Then we call the getSalary() method on the object to return the value.
 
 Why Encapsulation?
 It is considered good practice to declare your class attributes as private (as often as you can). Encapsulation ensures better control of your data, because you (or others) can change one part of the code without affecting other parts
 Increased security of data
 
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-
-ADVERTISEMENT
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
-
-
 Inheritance
 In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
 
 derived class (child) - the class that inherits from another class
 base class (parent) - the class being inherited from
-To inherit from a class, use the : symbol.
 
 In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class (parent):
 
@@ -406,77 +329,6 @@ int main() {
 Why And When To Use "Inheritance"?
 - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
-
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-
-ADVERTISEMENT
-
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
-
-
 Multilevel Inheritance
 A class can also be derived from one class, which is already derived from another class.
 
@@ -504,176 +356,6 @@ int main() {
   myObj.myFunction();
   return 0;
 }
-
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-ADVERTISEMENT
-
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
-
-
-
-
-Multiple Inheritance
-A class can also be derived from more than one base class, using a comma-separated list:
-
-Example
-// Base class
-class MyClass {
-  public:
-    void myFunction() {
-      cout << "Some content in parent class." ;
-    }
-};
-
-// Another base class
-class MyOtherClass {
-  public:
-    void myOtherFunction() {
-      cout << "Some content in another class." ;
-    }
-};
-
-// Derived class
-class MyChildClass: public MyClass, public MyOtherClass {
-};
-
-int main() {
-  MyChildClass myObj;
-  myObj.myFunction();
-  myObj.myOtherFunction();
-  return 0;
-}
-
-ADVERTISEMENT
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-
-ADVERTISEMENT
-
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
 
 
 Access Specifiers
@@ -707,79 +389,9 @@ int main() {
   return 0;
 }
 
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-
-ADVERTISEMENT
-
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
-
 Polymorphism
 Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
-
-Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
 
 For example, think of a base class called Animal that has a method called animalSound(). Derived classes of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
 
@@ -807,7 +419,7 @@ class Dog : public Animal {
       cout << "The dog says: bow wow \n";
     }
 };
-Remember from the Inheritance chapter that we use the : symbol to inherit from a class.
+
 
 Now we can create Pig and Dog objects and override the animalSound() method:
 
@@ -846,23 +458,8 @@ int main() {
   myDog.animalSound();
   return 0;
 }
-Why And When To Use "Inheritance" and "Polymorphism"?
-- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
-
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-ADVERTISEMENT
-ADVERTISEMENT
-
-SPACES
-C++ Files
-The fstream library allows us to work with files.
+The   library allows us to work with files.
 
 To use the fstream library, include both the standard <iostream> AND the <fstream> header file:
 
@@ -871,9 +468,10 @@ Example
 #include <fstream>
 There are three classes included in the fstream library, which are used to create, write or read files:
 
-Class	Description
-ofstream	Creates and writes to files
-ifstream	Reads from files
+Class	     Description
+ofstream	 Creates and writes to files
+ifstream	 Reads from files
+
 fstream	A combination of ofstream and ifstream: creates, reads, and writes to files
 Create and Write To a File
 To create a file, use either the ofstream or fstream class, and specify the name of the file.
@@ -898,8 +496,6 @@ int main() {
 Why do we close the file?
 It is considered good practice, and it can clean up unnecessary memory space.
 
-ADVERTISEMENT
-
 Read a File
 To read from a file, use either the ifstream or fstream class, and the name of the file.
 
@@ -921,222 +517,6 @@ while (getline (MyReadFile, myText)) {
 // Close the file
 MyReadFile.close();
 
-ADVERTISEMENT
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-
-ADVERTISEMENT
-ADVERTISEMENT
-
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
-
 
 C++ Exceptions
 When executing C++ code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
-
-When an error occurs, C++ will normally stop and generate an error message. The technical term for this is: C++ will throw an exception (throw an error).
-
-C++ try and catch
-Exception handling in C++ consist of three keywords: try, throw and catch:
-
-The try statement allows you to define a block of code to be tested for errors while it is being executed.
-
-The throw keyword throws an exception when a problem is detected, which lets us create a custom error.
-
-The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
-
-The try and catch keywords come in pairs:
-
-Example
-try {
-  // Block of code to try
-  throw exception; // Throw an exception when a problem arise
-}
-catch () {
-  // Block of code to handle errors
-}
-Consider the following example:
-
-Example
-try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw (age);
-  }
-}
-catch (int myNum) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-  cout << "Age is: " << myNum;
-}
-Example explained
-We use the try block to test some code: If the age variable is less than 18, we will throw an exception, and handle it in our catch block.
-
-In the catch block, we catch the error and do something about it. The catch statement takes a parameter: in our example we use an int variable (myNum) (because we are throwing an exception of int type in the try block (age)), to output the value of age.
-
-If no error occurs (e.g. if age is 20 instead of 15, meaning it will be be greater than 18), the catch block is skipped:
-
-Example
-int age = 20;
-You can also use the throw keyword to output a reference number, like a custom error number/code for organizing purposes:
-
-Example
-try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw 505;
-  }
-}
-catch (int myNum) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-  cout << "Error number: " << myNum;
-}
-Handle Any Type of Exceptions (...)
-If you do not know the throw type used in the try block, you can use the "three dots" syntax (...) inside the catch block, which will handle any type of exception:
-
-Example
-try {
-  int age = 15;
-  if (age >= 18) {
-    cout << "Access granted - you are old enough.";
-  } else {
-    throw 505;
-  }
-}
-catch (...) {
-  cout << "Access denied - You must be at least 18 years old.\n";
-}
-
-ADVERTISEMENT
-Get Certified
-COLOR PICKER
-colorpicker
-   
-ADVERTISEMENT
-ADVERTISEMENT
-ADVERTISEMENT
-
-SPACESUPGRADEAD-FREENEWSLETTERGET CERTIFIEDREPORT ERROR
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    FORUM ABOUT
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
-
-
-
